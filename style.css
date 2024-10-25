@@ -6,14 +6,42 @@ body{
 h1 {
     color: #00CFE6;
     font-size: 50px;
+    text-align: center;
 }
 
 h2 {
-    color: #00CFE6;
+    color: #FFFFFF;
+    font-size: 35px;
+}
+
+h3 {
+    color: #FFFFFF;
     font-size: 25px;
+}
+
+a {
+    color: #00CFE6;
+    font-size: 20px;
 }
 
 p {
     color: #FFFFFF;
+    font-size: 20px
+}
+
+li {
+    color: #FFFFFF;
     font-size: 20px;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

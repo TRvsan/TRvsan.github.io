@@ -1,128 +1,144 @@
 <!doctype html>
 <html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TRvsan</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      id="cookiebanner"
+      src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TRvsan</title>
-</head>
+  <body>
+    <h1>Recensione Hyprland</h1>
 
-<body>
-  <h1>Recensione Hyprland</h1>
+    <h3>Site Navigation</h3>
+    <a href="index.html"> Home</a>
+    <a href="configuration.html"> Configurazione</a>
+    <a href="hall.html"> Hall of Fame</a>
 
-  <h3>Site Navigation</h3>
-  <a href="index.html"> Home</a>
-  <a href="configuration.html"> Configurazione</a>
-  <a href="hall.html"> Hall of Fame</a>
+    <h2>Configurazione</h2>
 
-  <h2>Configurazione</h2>
+    <p>
+      Struttura della configurazione <br />
+      Hyprland utilizza file di configurazione scritti in plain text che vengono
+      tipicamente memorizzati nella directory ~/.config/hypr/. Il file
+      principale che gestisce le impostazioni si chiama hyprland.conf. Questo
+      file contiene tutte le informazioni necessarie per personalizzare
+      l’aspetto e il comportamento del compositore, comprese le scorciatoie da
+      tastiera, il layout delle finestre, e i comportamenti specifici delle
+      applicazioni.
+    </p>
 
-  <p>
-    Struttura della configurazione <br />
-    Hyprland utilizza file di configurazione scritti in plain text che vengono
-    tipicamente memorizzati nella directory ~/.config/hypr/. Il file
-    principale che gestisce le impostazioni si chiama hyprland.conf. Questo
-    file contiene tutte le informazioni necessarie per personalizzare
-    l’aspetto e il comportamento del compositore, comprese le scorciatoie da
-    tastiera, il layout delle finestre, e i comportamenti specifici delle
-    applicazioni.
-  </p>
+    <img src="config1.png" />
+    <img src="config2.png" />
+    <img src="config3.png" />
+    <img src="config4.png" />
+    <img src="config5.png" />
 
-  <p>
-    Basandoci sulla configurazione di default di Hyprland possiamo analizzare
-    le alcune delle componenti che vengono trattate
-  </p>
+    <p>
+      Basandoci sulla configurazione di default di Hyprland possiamo analizzare
+      le alcune delle componenti che vengono trattate
+    </p>
 
-  <h3>Monitors</h3>
-  <p>
-    monitor=,preferred,auto,auto <br />
-    # Imposta il monitor con la risoluzione preferita.
-  </p>
+    <h3>Monitors</h3>
+    <p>
+      monitor=,preferred,auto,auto <br />
+      # Imposta il monitor con la risoluzione preferita.
+    </p>
 
-  <h3>Programmi</h3>
-  <p>
-    $terminal = kitty <br />
-    $fileManager = dolphin <br />
-    $menu = wofi --show drun <br />
-    # Crea delle variabili con dentro il comando per eseguire dei programmi
-  </p>
+    <h3>Programmi</h3>
+    <p>
+      $terminal = kitty <br />
+      $fileManager = dolphin <br />
+      $menu = wofi --show drun <br />
+      # Crea delle variabili con dentro il comando per eseguire dei programmi
+    </p>
 
-  <h3>Autostart</h3>
-  <p>
-    exec-once = $terminal <br />
-    exec-once = nm-applet & <br />
-    # Per eseguire delle app all'avvio di Hyprland
-  </p>
+    <h3>Autostart</h3>
+    <p>
+      exec-once = $terminal <br />
+      exec-once = nm-applet & <br />
+      # Per eseguire delle app all'avvio di Hyprland
+    </p>
 
-  <h3>Variabili di Ambiente</h3>
-  <p>
-    env = XCURSOR_SIZE,24 <br />
-    env = HYPRCURSOR_SIZE,24 <br />
-  </p>
+    <h3>Variabili di Ambiente</h3>
+    <p>
+      env = XCURSOR_SIZE,24 <br />
+      env = HYPRCURSOR_SIZE,24 <br />
+    </p>
 
-  <h3>Look and Feel</h3>
-  <p>
-    gaps_in = 5 <br />
-    gaps_out = 20 <br />
-    # Gaps interni ed esterni <br />
-    <br />
-    border_size = 2 <br />
-    col.active_border = rgba(33ccffee) <br />
-    col.inactive_border = rgba(595959aa) <br />
-    # Colori e dimensioni dei bordi <br />
-    <br />
-    rounding = 10 <br />
-    active_opacity = 1.0 <br />
-    inactive_opacity = 1.0 <br />
-    drop_shadow = true <br />
-    # Trasparenza, ombre e arrotondamenti <br />
-    <br />
-    animations { <br />
-    enabled = yes, <br />
-    bezier = easeOutQuint,0.23,1,0.32,1 <br />
-    } <br />
-    # Animazioni delle finestre
-  </p>
+    <h3>Look and Feel</h3>
+    <p>
+      gaps_in = 5 <br />
+      gaps_out = 20 <br />
+      # Gaps interni ed esterni <br />
+      <br />
+      border_size = 2 <br />
+      col.active_border = rgba(33ccffee) <br />
+      col.inactive_border = rgba(595959aa) <br />
+      # Colori e dimensioni dei bordi <br />
+      <br />
+      rounding = 10 <br />
+      active_opacity = 1.0 <br />
+      inactive_opacity = 1.0 <br />
+      drop_shadow = true <br />
+      # Trasparenza, ombre e arrotondamenti <br />
+      <br />
+      animations { <br />
+      enabled = yes, <br />
+      bezier = easeOutQuint,0.23,1,0.32,1 <br />
+      } <br />
+      # Animazioni delle finestre
+    </p>
 
-  <h3>Input</h3>
-  <p>
-    kb_layout = us <br />
-    follow_mouse = 1 <br />
-    # Configurazione della tastiera e del mouse
-  </p>
+    <h3>Input</h3>
+    <p>
+      kb_layout = us <br />
+      follow_mouse = 1 <br />
+      # Configurazione della tastiera e del mouse
+    </p>
 
-  <h3>Gesti</h3>
-  <p>
-    gestures { <br />
-    workspace_swipe = false <br />
-    } <br />
-    # Le gesture per il passaggio tra spazi di lavoro sono disabilitate di
-    default
-  </p>
+    <h3>Gesti</h3>
+    <p>
+      gestures { <br />
+      workspace_swipe = false <br />
+      } <br />
+      # Le gesture per il passaggio tra spazi di lavoro sono disabilitate di
+      default
+    </p>
 
-  <h3>Keybindings</h3>
-  <p>
-    bind = $mainMod, Q, exec, $terminal <br />
-    bind = $mainMod, M, exit <br />
-    bind = $mainMod, 1, workspace, 1 <br />
-    # Principali scorciatoie di tastiera e mouse per navigare, muovere e
-    ridimensionare le finestre
-  </p>
+    <h3>Keybindings</h3>
+    <p>
+      bind = $mainMod, Q, exec, $terminal <br />
+      bind = $mainMod, M, exit <br />
+      bind = $mainMod, 1, workspace, 1 <br />
+      # Principali scorciatoie di tastiera e mouse per navigare, muovere e
+      ridimensionare le finestre
+    </p>
 
-  <h3>Finestre e spazi di lavoro</h3>
-  <p>
-    windowrulev2 = float,class:^(kitty)$,title:^(kitty)$ <br />
-    windowrulev2 = suppressevent maximize, class:.* <br />
-    # Alcune regole che possono essere imposte alle finestre o agli spazi di
-    lavoro
-  </p>
+    <h3>Finestre e spazi di lavoro</h3>
+    <p>
+      windowrulev2 = float,class:^(kitty)$,title:^(kitty)$ <br />
+      windowrulev2 = suppressevent maximize, class:.* <br />
+      # Alcune regole che possono essere imposte alle finestre o agli spazi di
+      lavoro
+    </p>
 
-  <h2>Conclusioni</h2>
-  <p>
-    Ora che conosciamo le basi della configurazione di default di Hyprland
-    possiamo passare a vedere qualche esempio dei setup più amati dalla
-    community: <a href="hall.html"> Hall Of Fame</a>
-  </p>
-</body>
-
+    <h2>Conclusioni</h2>
+    <p>
+      Ora che conosciamo le basi della configurazione di Hyprland possiamo
+      passare a vedere qualche esempio dei setup più amati dalla community:
+      <a href="hall.html"> Hall Of Fame</a>
+      <br />
+      <img
+        src="https://raw.githubusercontent.com/hyprwm/Hyprland/main/assets/header.svg"
+        style="width: 300px"
+        class="center"
+      />
+    </p>
+  </body>
 </html>
